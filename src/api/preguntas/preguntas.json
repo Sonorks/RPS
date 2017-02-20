@@ -1,0 +1,96 @@
+[
+    {
+        "preguntaId": 1,
+        "pregunta": "¿Sabes qué son azúcares, ácidos grasos trans y sodio?",
+        "opciones": [{
+            "opcionId": 1,
+            "opcion": "NO"
+        },
+        {
+            "opcionId": 2,
+            "opcion": "SI"
+        }]
+    },
+    {
+        "preguntaId": 2,
+        "pregunta": "Crees que esto se debe a:",
+        "opciones": [{
+            "opcionId": 1,
+            "opcion": "Desinterés"
+        },
+        {
+            "opcionId": 2,
+            "opcion": "Falta de información"
+        },
+        {
+            "opcionId": 3,
+            "opcion": "Otro"
+        }]
+    },
+    {
+        "preguntaId":3,
+        "pregunta": "¿Conoces la importancia de restringir el consumo de estos elementos?",
+        "opciones": [{
+            "opcionId": 1,
+            "opcion": "NO"
+        },
+        {
+            "opcionId": 2,
+            "opcion": "SI"
+        }]
+    },
+    {
+        "preguntaId":4,
+        "pregunta": "¿Restringes el consumo de estos a los niveles recomendados?",
+        "opciones": [{
+            "opcionId": 1,
+            "opcion": "NO"
+        },
+        {
+            "opcionId": 2,
+            "opcion": "SI"
+        }]
+    },
+    {
+        "preguntaId": 5,
+        "pregunta": "Crees que esto se debe a:",
+        "opciones": [{
+            "opcionId": 1,
+            "opcion": "No pienso en este tema"
+        },
+        {
+            "opcionId": 2,
+            "opcion": "Aun no tomo la desición de restringir el consumo de estos elementos"
+        },
+        {
+            "opcionId": 3,
+            "opcion": "Lo hice en el pasado pero no obtuve los resultados que esperaba"
+        },
+        {
+            "opcionId": 4,
+            "opcion": "Decidí restringir el consumo de estos elementos pero aún no comienzo a hacerlo"
+        },
+        {
+            "opcionId": 5,
+            "opcion": "Decidí no limitar el consumo de estos elementos porque no le veo sentido"
+        },
+        {
+            "opcionId": 6,
+            "opcion": "Decidí no limitar el consumo de estos elementos porque es difícil"
+        }]
+    },
+    {
+        "preguntaId": 6,
+        "pregunta": "Actualmente,¿Lo haces de manera habitual? (casi todos los días)",
+        "opciones": [{
+            "opcionId": 1,
+            "opcion": "NO"
+        },
+        {
+            "opcionId": 2,
+            "opcion": "SI"
+        }]
+    }
+]
+    
+
