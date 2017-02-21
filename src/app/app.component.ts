@@ -7,17 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  	formVisible = true;
+  		formVisible = true;
 		finalVisible = false;
 		datos = null;
-		visibilidad = 1;
+		visibilidad = 0;
 		numeroPreguntas = 6;
 		preguntas = []; //donde se guardaran las respuestas
 		mostrarDatos(){
-			var usuario = this.datos.usuario;
-			var programa = this.datos.programa;			
+			// var cedula = 
+			// var programa = this.datos.programa;			
 			this.formVisible = false;
-			this.visibilidad[1] = 1;
+			this.visibilidad = 1;
 		}
 		esVisible(pregunta){
 			if (this.visibilidad[pregunta] === 0){
@@ -28,14 +28,19 @@ export class AppComponent {
 			}
 		}
 		cambiarPregunta($event){
-			this.visibilidad[$event.actual] = 0;
-			if($event.siguiente=== 0){
+			/*if($event.siguiente == 0){
 				this.finalVisible = true;
 				for(var i = 1; i<=this.numeroPreguntas; i++){
-					console.log("Pregunta: "+i+" "+this.preguntas[i]);
+					if (this.preguntas[i]) {
+						console.log("Pregunta: "+i+" "+this.preguntas[i]);
+					}
+					
 				}
+			}*/
+			if ($event.final === true) {
+				this.finalVisible = true;
 			}
-			this.visibilidad[$event.siguiente] = 1;
+			this.visibilidad = $event.siguiente ;
 		}
 		setRespuesta($event){
 			
