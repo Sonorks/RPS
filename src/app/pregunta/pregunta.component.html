@@ -1,7 +1,10 @@
-<div *ngFor='let pregunta of preguntas' align="center"class="w3-container" style="width:50%;opacity:0.8;">
+
+<div *ngFor='let pregunta of preguntas' align="center" class="w3-div" style="width:50%;opacity:0.8;">
 	<div *ngIf="visibilidad==pregunta.preguntaId" >
 		<h1 >  <b >{{pregunta.pregunta}} </b></h1>
 		<br/><br/>
-		<input *ngFor='let opcion of pregunta.opciones' (click)="advance(opcion.opcion, pregunta.preguntaId)" type="button" class="w3-btn w3-red" class="w3-btn" value="{{opcion.opcion}}" >
+		<input *ngFor='let opcion of pregunta.opciones' (click)="advance(opcion.opcion, pregunta.preguntaId)" type="button" class="w3-btn w3-blue" value="{{opcion.opcion}}" >
+		<br/>
+		<!--<input (click)="advance('SI', pregunta.preguntaId)" type="button" class="w3-btn w3-green" value="Si">-->
 	</div>
 </div>

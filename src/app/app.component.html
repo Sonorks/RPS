@@ -1,6 +1,6 @@
 <app-welcome *ngIf="formVisible" (mostrarDatos)="mostrarDatos($event)"></app-welcome>
-<app-pregunta [visibilidad]="visibilidad" (cambiarPregunta)="cambiarPregunta($event)" (setRespuesta)="setRespuesta($event)"></app-pregunta>
-<div  align="center" id="final" class="w3-container" style="width:50%;opacity:0.8;">
-	<h1 *ngIf="finalVisible"> ¡GRACIAS!</h1>
+<app-pregunta [visibilidad]="visibilidad" (cambiarPregunta)="cambiarPregunta($event)" (setRespuesta)="setRespuesta($event)"></app-pregunta> 
+<div *ngIf="visibilidad == 100" align="center" id="final" class="w3-container" style="width:50%;opacity:0.8;">
+	<h1 > ¡GRACIAS!</h1>
 	<br/><br/>
 </div>

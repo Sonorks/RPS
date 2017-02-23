@@ -28,7 +28,7 @@ export class PreguntaComponent implements OnInit {
   advance(opcion: string, preguntaActual: number){
     this.setRespuesta.emit({res: opcion, pregunta: preguntaActual})
     if (preguntaActual == 2 || 5 || 6){
-      this.cambiarPregunta.emit({actual: preguntaActual, siguiente: 0, final: true})
+      this.cambiarPregunta.emit({actual: preguntaActual, siguiente: 100, final: true})
     }
     if (preguntaActual == 1) {
       if (opcion == "NO") {
